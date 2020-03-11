@@ -31,7 +31,7 @@
       </style>
   </head>
 
-  <body id="homepage">
+  <body id="homepage" class="menu-shown">
     <div id="bg-overlay">&nbsp;</div>
     <!-- Line below is to preload the font when the page loads -->
     <span class="fa fa-asterisk" style="opacity: 0;">&nbsp;</span>

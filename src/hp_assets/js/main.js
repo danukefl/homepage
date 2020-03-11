@@ -1,4 +1,4 @@
-let menuHidden = true;
+let menuHidden = false;
 let randBgTimer = null;
 
 // Simulates PHP's date function - http://jacwright.com/projects/javascript/date_format/
