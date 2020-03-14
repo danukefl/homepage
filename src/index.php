@@ -1,3 +1,4 @@
+
 <?php
   /**
   * homepage
@@ -44,14 +45,14 @@
       <span id="clock"></span>
     </div>
 
-    <div id="links-wrap" class="menu-item bg">
+    <div id="links-wrap" >
       <?php
         foreach ($config['items'] as $i => $item) {
           $icon_or_img = $item['icon'] ? "<i class=\"fa fa-{$item['icon']}\"></i>" : "<img src=\"hp_assets/img/{$item['img']}\" height=\"80\" width=\"80\" alt=\"{$item['alt']}\" />";
           $link = str_replace("{{cur}}", get_current_url(), $item['link']);
           $target = $item['new_tab'] ? " target=\"_blank\" rel=\"noopener noreferrer\"" : "";
 
-          echo "<div class=\"link col-md-4 col-sm-6 col-xs-12\"><a href=\"{$link}\" title=\"{$item['alt']}\"{$target}>{$icon_or_img}</a></div>";
+          echo "<div class=\"bg icon\"><a href=\"{$link}\" title=\"{$item['alt']}\"{$target}>{$icon_or_img}</a></div>";
         }
       ?>
     </div>
@@ -68,3 +69,4 @@
     <script type="text/javascript" src="hp_assets/js/main.js"></script>
   </body>
 </html>
+
