@@ -52,7 +52,7 @@
           $link = str_replace("{{cur}}", get_current_url(), $item['link']);
           $target = $item['new_tab'] ? " target=\"_blank\" rel=\"noopener noreferrer\"" : "";
 
-          echo "<div class=\"bg icon\"><a href=\"{$link}\" title=\"{$item['alt']}\"{$target}>{$icon_or_img}</a></div>";
+          echo "<div class=\"bg icon\"><a href=\"{$link}\" title=\"{$item['alt']}\"{$target}>{$icon_or_img}<br /><div class=\"link-label\">{$item['alt']}</div></a></div>";
         }
       ?>
     </div>
