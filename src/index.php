@@ -45,7 +45,7 @@
       <span id="clock"></span>
     </div>
 
-    <div id="links-wrap" >
+    <div id="links-wrap" class="menu-item bg">
       <?php
         foreach ($config['items'] as $i => $item) {
           $icon_or_img = $item['icon'] ? "<i class=\"fa fa-{$item['icon']}\"></i>" : "<img src=\"hp_assets/img/{$item['img']}\" height=\"80\" width=\"80\" alt=\"{$item['alt']}\" />";
