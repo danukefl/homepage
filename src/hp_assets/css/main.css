@@ -1,4 +1,3 @@
-
 html {height: 100%; width: 100%;}
 body {font-family: sans-serif; background: url("../img/background1.jpg"); z-index: 1; height: 100%; width: 100%; background-position: center; background-attachment: fixed;}
 
@@ -12,13 +11,13 @@ body.menu-shown #bg-overlay {opacity: 0.0;}
 #mobile-menu-wrap a {font-size: 20px; padding: 20px 20px 20px 24px; display: block; color: #fff;}
 #mobile-menu-wrap a:hover {color: #fff;}
 
-.bg {border-radius: 5px; background-color: rgba(0, 0, 0, .5); padding: 15px; margin: 5px;}
+.bg {padding: 15px; margin: 5px;}
 .bg a {color: #fff;}
 
 .icon {width:15%; text-align:center; display:inline-block; border-radius: 10px; background-color: rgba(0, 0, 0, .5); padding: 10px; margin: 10px;}
 .link-label {font-size: 12px; font-weight: bold;}
 
-#links-wrap { text-align:center; margin: 25% auto 0; font-size: 70px; max-width: 50%; max-height: 70%; overflow-y: auto;}
+#links-wrap { text-align:center; margin: 25% auto 0; font-size: 70px; width: 50%; max-height: 70%; overflow-y: auto;}
 #links-wrap a {transition: .3s all;}
 #links-wrap .link {display: inline-block; float: left; text-align: center;}
 #links-wrap .link img {opacity: .8; transition: .3s all;}
@@ -36,3 +35,5 @@ body.menu-shown #bg-overlay {opacity: 0.0;}
   #clock-wrap {font-size: 30px;}
 }
 
+.bgcolor { border-radius: 5px; background-color: rgba(0, 0, 0, .5); }
+.link-label {font-size: 12px; font-weight: bold; }
