@@ -1,4 +1,3 @@
-
 <?php
   /**
   * homepage
@@ -32,7 +31,7 @@
       </style>
   </head>
 
-  <body id="homepage" class="menu-shown">
+  <body id="homepage">
     <div id="bg-overlay">&nbsp;</div>
     <!-- Line below is to preload the font when the page loads -->
     <span class="fa fa-asterisk" style="opacity: 0;">&nbsp;</span>
@@ -41,7 +40,7 @@
       <a href="#" class="bg "><span class="fa fa-bars">&nbsp;</span></a>
     </div>
 
-    <div id="clock-wrap" class="menu-item bg">
+    <div id="clock-wrap" class="menu-item bg bgcolor">
       <span id="clock"></span>
     </div>
 
@@ -51,8 +50,8 @@
           $icon_or_img = $item['icon'] ? "<i class=\"fa fa-{$item['icon']}\"></i>" : "<img src=\"hp_assets/img/{$item['img']}\" height=\"80\" width=\"80\" alt=\"{$item['alt']}\" />";
           $link = str_replace("{{cur}}", get_current_url(), $item['link']);
           $target = $item['new_tab'] ? " target=\"_blank\" rel=\"noopener noreferrer\"" : "";
-
-          echo "<div class=\"bgcolor icon\"><a href=\"{$link}\" title=\"{$item['alt']}\"{$target}>{$icon_or_img}<br /><div class=\"link-label\">{$item['alt']}</div></a></div>";
+		  
+		  echo "<div class=\"bgcolor icon\"><a href=\"{$link}\" title=\"{$item['alt']}\"{$target}>{$icon_or_img}<br /><div class=\"link-label\">{$item['alt']}</div></a></div>";
         }
       ?>
     </div>
@@ -69,4 +68,3 @@
     <script type="text/javascript" src="hp_assets/js/main.js"></script>
   </body>
 </html>
-
